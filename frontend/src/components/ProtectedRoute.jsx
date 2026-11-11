@@ -1,0 +1,1 @@
+import React from 'react';import{Navigate,Outlet}from'react-router-dom';import{signedIn}from'../services/authService';export default function ProtectedRoute(){return signedIn()?<Outlet/>:<Navigate to="/login" replace/>}

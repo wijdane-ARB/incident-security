@@ -1,0 +1,1 @@
+import React from 'react';import{Navigate,Outlet}from'react-router-dom';import{role}from'../services/authService';export default function RoleRoute({allow}){return allow.includes(role())?<Outlet/>:<Navigate to="/" replace/>}
